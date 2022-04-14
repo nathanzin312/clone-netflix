@@ -22,29 +22,56 @@ html {
 }
 
 body {
-  font-family: "Bebas neue", cursive;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-header .conteiner .logo {
+header {
+  display: block;
+  width: 90vw;
+  background-position: center;
+  position: absolute;
+  /* z-index: 2; */
+}
+
+header .logo {
   color: var(--red);
   font-size: 4rem;
+  font-family: "Bebas neue";
 }
 
-header .conteiner nav a {
+header nav a {
   text-decoration: none;
   color: #aaa;
   margin-right: 1rem;
   filter: 0.3s;
 }
 
-header .conteiner nav a:hover {
+header nav a:hover {
   /* color: aqua; */
   filter: brightness(1.5);
 }
 
-.conteiner {
+header .conteiner {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.main-movie {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.603) 20%,
+      transparent
+    ),
+    url("/img/main-img.jpg");
+  width: 100vw;
+  height: 45rem;
+  padding-top: 15rem;
+  background-size: cover;
+  /* background-position: center; */
+}
+.main-movie .conteiner > h3,
+p {
+  color: rgb(255, 255, 255);
 }
