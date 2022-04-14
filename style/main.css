@@ -1,0 +1,50 @@
+/* declarando variaveis das cores e do rem, que seram utilizados em todo css*/
+html {
+  --red: #e50914;
+  --black: #141414;
+
+  font-size: 62.5%; /* define o rem com tamanho de 10px*/
+}
+
+/*
+ resetando a margin e o padding e definindo ue o conteudo nao saia sobre a borda 
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  height: 100vh;
+  width: 100vw;
+  background: var(--black);
+}
+
+body {
+  font-family: "Bebas neue", cursive;
+}
+
+header .conteiner .logo {
+  color: var(--red);
+  font-size: 4rem;
+}
+
+header .conteiner nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 1rem;
+  filter: 0.3s;
+}
+
+header .conteiner nav a:hover {
+  /* color: aqua; */
+  filter: brightness(1.5);
+}
+
+.conteiner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
