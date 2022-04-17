@@ -10,19 +10,34 @@
       rel="stylesheet"
     />
     <link href="style/main.css" rel="stylesheet" />
+    <script src="js/script.js" defer></script>
+
+    <meta name="author" content="Nathan Sanches" />
+    <meta
+      name="description"
+      content="Clone da netflix da plataforma da dio com algumas modificaçoes."
+    />
+
+    <link rel="shortcut icon" href="img/teste.png" />
     <title>NETFLIX</title>
   </head>
   <body>
     <div class="page">
       <header>
         <div class="conteiner">
-          <h2 class="logo">NETFLIX</h2>
-          <nav>
-            <a href="#">Início</a>
-            <a href="#">Séries</a>
-            <a href="#">Filmes</a>
-            <a href="#">Documentarios</a>
-          </nav>
+          <div class="nav-logo">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+              <a href="#">Início</a>
+              <a href="#">Séries</a>
+              <a href="#">Filmes</a>
+              <a href="#">Em alta</a>
+              <a href="#">Minha lista</a>
+            </nav>
+          </div>
+          <div class="conta">
+            <img src="img/perfil.png" alt="perfil" class="perfil" />
+          </div>
         </div>
       </header>
       <main>
@@ -30,30 +45,37 @@
           <div class="conteiner">
             <h3 class="title">Peaky Blinders</h3>
             <p class="description">
-              Thomas Shelby e seus irmãos retornam a Birmingham depois de servir no exército 
-              britânico durante a Primeira Guerra Mundial. Os Peaky Blinders, a gangue na qual 
-              Thomas é líder, controlam a cidade de Birmingham. Mas, como as ambições de Shelby
-               se estendem para além de Birmingham, ele planeja construir o império de negócios
-                que criou e impedir qualquer um que atrapalhar.
+              Thomas Shelby e seus irmãos retornam a Birmingham depois de servir
+              no exército britânico durante a Primeira Guerra Mundial. Os Peaky
+              Blinders, a gangue na qual Thomas é líder, controlam a cidade de
+              Birmingham. Mas, como as ambições de Shelby se estendem para além
+              de Birmingham, ele planeja construir o império de negócios que
+              criou e impedir qualquer um que atrapalhar.
             </p>
             <div class="buttons">
               <div class="btnn">
-            <button role="button" class="btn-watch" >
-              <img src="img/icone-reproduçao.png">
-              Assistir
-            </button>
-            </div>
-            
+                <button role="button" class="btn-watch">
+                  <img src="img/icone-reproduçao.png" />
+                  Assistir
+                </button>
+              </div>
             <button role="button" class="btn-informations">
-              <img src="img/kisspng-information-computer-icons-scalable-vector-graphic-pictures-icon-information-5ab0818642e194.141023201521516934274.png">
-              
+              <img
+                src="img/kisspng-information-computer-icons-scalable-vector-graphic-pictures-icon-information-5ab0818642e194.141023201521516934274.png"
+              />
+
               Mais informaçoes
             </button>
-           </div>
-          </div>
           </div>
         </div>
+        <div class="movies"></div>
       </main>
+      <footer>
+        <div class="conteiner">
+          <a href="https://github.com/nathanzin312"></a>
+          <a href="https://www.linkedin.com/in/nathan-sanches-94298322a/"></a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
