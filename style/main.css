@@ -202,6 +202,7 @@ i {
   flex-direction: row;
   align-items: center;
 }
+
 .movies .conteiner {
   width: 100vw;
   background: linear
@@ -239,11 +240,26 @@ li:hover {
 }
 
 footer .conteiner {
+  display: flex;
   height: 30vh;
   width: 100vw;
-  position: absolute;
   margin-top: 62rem;
   border-top: 5px solid rgb(135, 138, 135);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #646262;
+}
+
+.icons-footer {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.conteiner .footer-icons {
+  width: 5rem;
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar {
