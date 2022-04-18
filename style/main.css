@@ -27,7 +27,7 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
   overflow-x: hidden;
   background: var(--black);
 }
@@ -91,9 +91,11 @@ header .nav-logo {
   background-size: cover;
 }
 
-.main-movie .conteiner > h3,
+ h3,
 p {
   color: rgb(255, 255, 255);
+  /*font-family: 'Helvetica Neue';*/
+  font-size: 2rem;
 }
 
 button {
@@ -104,7 +106,11 @@ button {
   font-weight: bolder;
   margin-right: 8px;
   cursor: pointer;
-  transition: 3s ease all;
+  /*transitsion: 1s ;*/
+}
+
+button:hover{
+  transform: scale(1.01);
 }
 
 .btn-watch {
@@ -161,11 +167,71 @@ i {
   height: 50rem;
 }
 
+.movies .btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: var(--red);
+  width: 5rem;
+  font-size: 3rem;
+  height: 31rem
+  
+}
+.less{
+  margin-left:-2rem;
+  background:linear-gradient( transparent);
+   background:linear-gradient( to right, var(--black)  70%,transparent  100% );
+}
+
+ .next{
+  margin-right: 3rem;
+  margin-left: 129rem;
+   background:linear-gradient( to left, var(--black) 70%,transparent  100% );
+}
+
+.movies .movies-cap{
+  width: 15vw;
+    object-fit: cover;
+  object-position: center;
+}
+
+.movies .conteiner, .movies ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.movies .conteiner{
+  hidth: ;
+  width: 100vw;
+  background: linear linear-gradient(to right, black 10%,  transparent 90% ,black 10%);
+}
+
+li{
+   display: inline-block;
+}
+
+li:hover{
+   filter: brightness(1.5);
+   cursor: pointer;
+}
+.movies ul{
+  display: flex;
+  overflow: hidden;
+}
+.movies img{
+  margin-right: 1.2rem;
+}
+
+.title-category{
+      margin-bottom: -6rem;
+    margin-top: 10rem;}
+
 footer {
 }
 
 ::-webkit-scrollbar {
-  width: 17px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -174,5 +240,5 @@ footer {
 
 ::-webkit-scrollbar-thumb {
   background: #b20710;
-  border-radius: 2px;
+  border-radius: 4px;
 }
