@@ -91,7 +91,7 @@ header .nav-logo {
   background-size: cover;
 }
 
- h3,
+h3,
 p {
   color: rgb(255, 255, 255);
   /*font-family: 'Helvetica Neue';*/
@@ -109,8 +109,9 @@ button {
   /*transitsion: 1s ;*/
 }
 
-button:hover{
-  transform: scale(1.01);
+button:hover {
+  /* transform: scale(1.01); */
+  filter: brightness(1.5);
 }
 
 .btn-watch {
@@ -167,7 +168,7 @@ i {
   height: 50rem;
 }
 
-.movies .btn{
+.movies .btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,59 +176,74 @@ i {
   color: var(--red);
   width: 5rem;
   font-size: 3rem;
-  height: 31rem
-  
+  height: 31rem;
 }
-.less{
-  margin-left:-2rem;
-  background:linear-gradient( transparent);
-   background:linear-gradient( to right, var(--black)  70%,transparent  100% );
+.less {
+  margin-left: -2rem;
+  background: linear-gradient(transparent);
+  background: linear-gradient(to right, var(--black) 70%, transparent 100%);
 }
 
- .next{
+.next {
   margin-right: 3rem;
   margin-left: 129rem;
-   background:linear-gradient( to left, var(--black) 70%,transparent  100% );
+  background: linear-gradient(to left, var(--black) 70%, transparent 100%);
 }
 
-.movies .movies-cap{
+.movies .movies-cap {
   width: 15vw;
-    object-fit: cover;
+  object-fit: cover;
   object-position: center;
 }
 
-.movies .conteiner, .movies ul{
+.movies .conteiner,
+.movies ul {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.movies .conteiner{
-  hidth: ;
+.movies .conteiner {
   width: 100vw;
-  background: linear linear-gradient(to right, black 10%,  transparent 90% ,black 10%);
+  background: linear
+    linear-gradient(to right, black 10%, transparent 90%, black 10%);
 }
 
-li{
-   display: inline-block;
+li {
+  display: inline-block;
+  list-style: none;
 }
 
-li:hover{
-   filter: brightness(1.5);
-   cursor: pointer;
+li:hover {
+  transform: scale(1.1);
+  filter: brightness(1.5);
+  cursor: pointer;
 }
-.movies ul{
+.movies ul {
   display: flex;
   overflow: hidden;
 }
-.movies img{
+.movies img {
   margin-right: 1.2rem;
 }
 
-.title-category{
-      margin-bottom: -6rem;
-    margin-top: 10rem;}
+.title-category {
+  margin-left: 2rem;
+  margin-bottom: -5rem;
+  margin-top: 10rem;
+}
 
-footer {
+.title-2 {
+  margin-left: 2rem;
+  margin-bottom: -5rem;
+  margin-top: 2rem;
+}
+
+footer .conteiner {
+  height: 30vh;
+  width: 100vw;
+  position: absolute;
+  margin-top: 62rem;
+  border-top: 5px solid rgb(135, 138, 135);
 }
 
 ::-webkit-scrollbar {
