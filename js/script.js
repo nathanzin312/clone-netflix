@@ -10,3 +10,10 @@ function show(indice, indiceLista) {
     listaUl.scrollBy(-100, 0);
   }
 }
+
+function menu() {
+  var e = document
+    .getElementsByClassName("sm-menu")[0]
+    .classList.toggle("show");
+  // e.classList.add(".show");
+}

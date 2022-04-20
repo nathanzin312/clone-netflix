@@ -19,30 +19,28 @@ html {
   box-sizing: border-box;
 }
 
-/* div page que contem todos os elementos da pagina */
-.page {
+body {
   height: 100vh;
   width: 100vw;
-  /* background: var(--black); */
-}
-
-body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   overflow-x: hidden;
   background: var(--black);
 }
 
-header .nav-logo .logo {
+/* -------------------------------header------------------------------------------  */
+
+header .logo {
   color: var(--red);
-  font-size: 4rem;
+  font-size: 4vw;
   font-family: "Bebas neue";
-  margin-right: 7rem;
+  margin-right: 7vw;
 }
 
 header nav a {
   text-decoration: none;
   color: #aaa;
-  margin-right: 1rem;
+  margin-right: 1vw;
+  font-size: 1vw;
   filter: 0.3s;
 }
 
@@ -58,7 +56,7 @@ header .conteiner {
   width: 90vw;
   background-position: center;
   position: absolute;
-  margin-left: 2rem;
+  margin-left: 2vw;
 }
 
 header .nav-logo {
@@ -68,10 +66,88 @@ header .nav-logo {
 }
 
 #perfil {
-  height: 3rem;
+  height: 2vw;
   cursor: pointer;
 }
 
+.icons {
+  height: 2vw;
+  margin-left: 2vw;
+}
+
+.menu-hideen {
+  height: 2vw;
+  margin-left: 2vw;
+  display: none;
+  cursor: pointer;
+}
+
+.sm-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuzinho {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  margin-top: 6vh;
+  justify-content: right;
+}
+.sm-menu {
+  display: none;
+  margin-right: 0;
+  width: 130px;
+  margin-right: 2rem;
+  background-color: rgba(135, 138, 135, 0.384);
+  border-radius: 4px 0 4px 4px;
+}
+
+.sm-menu li {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin: auto;
+}
+
+.sm-menu li > a {
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #141414;
+}
+
+.show {
+  display: flex;
+  margin-right: 0;
+  width: 130px;
+  margin-right: 2rem;
+  background-color: rgba(135, 138, 135, 0.384);
+  border-radius: 4px 0 4px 4px;
+}
+
+/* --------------------------------------- responsivo header--------------------------------------------------- */
+
+@media screen and (max-width: 576px) {
+  ul.topnav li {
+    display: none;
+  }
+
+  header .logo {
+    font-size: 7vw;
+  }
+
+  .icons,
+  #perfil,
+  .menu-hideen {
+    height: 5vw;
+  }
+
+  .menu-hideen {
+    display: inline;
+  }
+}
+/* --------------------------------------- banner do filme principal------------------------------------------- */
 .main-movie .conteiner {
   width: 90vw;
   margin-left: 2rem;
@@ -161,9 +237,6 @@ i {
   flex-direction: row;
 }
 
-.icons {
-  height: 2rem;
-}
 .movies {
   height: 50rem;
 }
